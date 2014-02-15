@@ -1,0 +1,118 @@
+<div data-role="page" id="page1">
+
+     <div data-role="header">
+          <h1>MASHUP APPLICATION</h1>
+     </div>
+
+     <div data-role="content">     
+<p><a href="#DIRECTIONS" data-role="button">GET YOUR DIRECTIONS</a></p>
+	  <p><a href="#VIDEO" data-role="button">WATCH VIDEO</a></p>
+ 
+         
+          
+ 	               
+     </div>
+     
+</div>
+
+<div data-role="page" id="DIRECTIONS">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>GOOGLE MAPS</h1>
+     </div>
+
+     <div data-role="content">     
+          <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+        
+        <body>
+            <div id="direction">
+                 <h5><center><i>Get Directions</i></center></h5>
+
+                <hr/> <strong><center>START:</center></strong>
+
+                <input type="text" name="start" id="start" value="" /> <center><strong>DESTINATION:</strong></center>
+
+                <input type="text" name="destination" id="end" value="" />
+                <input type="submit" id="submit" value="SUBMIT" />
+            </div>
+            <div id="directions-pop"></div>
+            <div id="map-canvas" style="height:500px;width:100%;"></div>
+        </body>
+    </div>
+
+    <div data-role="header">
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div>
+   <a href="https://twitter.com/share" class="twitter-share-button"
+      data-url="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"
+      data-via="ajayaddula"
+      data-text="ME DRIVING AT"
+      data-count="vertical">Tweet</a>
+           </div> 
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-share-button" data-href="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" data-type="button_count"></div>
+           </div>
+        
+        
+    
+     </div>
+     
+   
+   
+<div data-role="page" id="VIDEO">
+
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>CHOOSE UMKC </h1>
+     </div>
+     <p><a href="#page1" data-role="button"> COMMENTS ON VIDEO</a></p>
+    
+
+<a href="#popupVideo" data-rel="popup" data-role="button" data-theme="b" >Launch video player</a>
+<div data-role="popup" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
+<iframe src="http://player.vimeo.com/video/86729590?portrait=0" width="497" height="298" seamless></iframe>
+    <div data-role="header">
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div>
+   <a href="https://twitter.com/share" class="twitter-share-button"
+      data-url="http://player.vimeo.com/video/86729590"
+      data-via="ajayaddula"
+      data-text="CHOOSE UMKC"
+      data-count="vertical">Tweet</a>
+           </div> 
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-share-button" data-href="http://player.vimeo.com/video/86729590" data-type="button_count"></div>
+</div>
+
+ 
+</div>
+</div>
+<div data-role="page" id="page1">
+      <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>COMMENTS</h1>
+     </div>
+    
+<input type="text" placeholder="Write feedback to store" id="inputString" />
+<h2 onclick="clearStorage()">Remove All Comments</h2>
+<h2 onclick="saveStatusLocally()">Save</h2>
+<h2 onclick="readStatus()">Show Comments</h2>
+<div id="write"></div>
+    
